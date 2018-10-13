@@ -1,3 +1,6 @@
 # B
 
-Hello World
+To run:
+
+npm install
+npm run dev

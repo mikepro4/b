@@ -16,3 +16,16 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	color: $black;
 }
+
+// Selection
+// -------------------------
+
+::selection {
+  background: $blade-purple1;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $blade-purple1;
+  color: $white;
+}

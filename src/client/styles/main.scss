@@ -1,3 +1,6 @@
+// reset
+@import "./imports/reset";
+
 // blueprint
 @import "../../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 @import "../../../node_modules/@blueprintjs/core/lib/scss/variables.scss";
@@ -5,6 +8,13 @@
 // imports
 @import "./imports/colors";
 @import "./imports/fonts";
+@import "./imports/variables";
+@import "./imports/links";
+@import "./imports/blueprint_overides";
+
+//components
+@import "../react/components/header/index";
+@import "../react/components/navigation/main_links/MainLinks";
 
 body {
 	margin: 0;

@@ -6,6 +6,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Light';
+    src: url('../../../static/fonts/Light.woff2') format('woff2'),
+        url('../../../static/fonts/Light.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('../../../static/fonts/Medium.woff2') format('woff2'),
+        url('../../../static/fonts/Medium.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 // @font-face {
 //     font-family: 'Medium';
 //     src: url('Gotham-Medium.woff2') format('woff2'),

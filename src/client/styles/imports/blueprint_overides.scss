@@ -1,0 +1,100 @@
+.bp3-button:not([class*="bp3-intent-"]) {
+  // background: $light-gray2;
+  background: $dark-gray2;
+  box-shadow: none;
+  height: 40px;
+  border: none;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  padding: 0 25px;
+  transition: all .2s ease-in-out;
+
+  .bp3-button-text {
+    position: relative;
+    top: -1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    // color: $dark-gray3;
+    color: $white;
+    font-family: "Medium", sans-serif;
+    font-size: 12px;
+    transition: all .2s ease-in-out;
+  }
+
+  &:hover {
+    box-shadow: none;
+    border: none;
+    // background: $dark-gray1;
+    background: $blade-purple1;
+
+    .bp3-button-text {
+      color: $white;
+    }
+  }
+
+  &:active {
+    box-shadow: none;
+    border: none;
+    background: $blade-purple3;
+  }
+
+  &.bp3-minimal {
+    background: $light-gray4;
+
+    .bp3-button-text {
+      color: $dark-gray5;
+    }
+
+    &:hover {
+      box-shadow: none;
+      border: none;
+      background: rgba($blade-purple1, 0.1);
+
+      .bp3-button-text {
+        color: $blade-purple1;
+      }
+    }
+
+    &:active {
+      background: rgba($blade-purple1, 0.2);
+    }
+  }
+}
+
+// .pt-button.pt-intent-success,
+// .pt-button.pt-intent-success:hover,
+// .pt-button.pt-intent-success:active {
+// 	background: #43bf4d;
+// 	border: none;
+// 	box-shadow: none;
+// 	background-image: none;
+// }
+//
+// .pt-button.pt-intent-primary,
+// .pt-button.pt-intent-primary:hover,
+// .pt-button.pt-intent-primary:active {
+// 	background: $cobalt4;
+// 	border: none;
+// 	box-shadow: none;
+// 	background-image: none;
+// }
+//
+// .pt-button:not([class*="pt-intent-"]):active,
+// .pt-button:not([class*="pt-intent-"]).pt-active {
+// 	background: $cobalt4;
+// 	color: $white;
+// 	box-shadow: none;
+//
+// 	&:before {
+// 		color: $white;
+// 	}
+// }
+//
+// .pt-button-group {
+// 	display: flex;
+//
+// 	button.pt-button {
+// 		flex-grow: 1;
+// 	}
+// }

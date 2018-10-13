@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import Router from "./router";
 import reducer from "./redux/reducers";
 import { configure as configureStore } from "./redux/store";
+import { ConnectedRouter } from "react-router-redux";
 
 import "./styles/main.scss";
 
@@ -32,3 +33,6 @@ class Main extends Component {
 		);
 	}
 }
+
+// This line connects rendered DOM elements with the React app
+ReactDOM.hydrate( <Main />, document.getElementById("app"));

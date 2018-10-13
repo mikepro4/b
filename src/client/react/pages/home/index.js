@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 class HomePage extends Component {
@@ -8,7 +10,7 @@ class HomePage extends Component {
 	renderHead = () => (
 		<Helmet>
 			<title>Blade – Home Page</title>
-			<meta property="og:title" content="Home page" />
+			<meta property="og:title" content="Homepage" />
 		</Helmet>
 	);
 	render() {
@@ -21,4 +23,13 @@ class HomePage extends Component {
 	}
 }
 
-export default { component: HomePage };
+
+function mapStateToProps() {
+	return {};
+}
+
+export default {
+	component: withRouter(
+		connect(mapStateToProps, {})(HomePage)
+	)
+}

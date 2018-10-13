@@ -22,6 +22,7 @@ export default (
 			bundle: 3
 		};
 
+
 		return Object.entries(assets)
 			.sort((firstElement, secondElement) => {
 				if (
@@ -36,9 +37,11 @@ export default (
 				return 1;
 			})
 			.reduce((accumulatorString, currentElement) => {
-				accumulatorString += `<script src='/${currentElement[1].js}'></script>`;
+				if(currentElement[0] == "vendor" || currentElement[0] == "bundle"  || currentElement[0] == "manifest" ) {
+					accumulatorString += `<script src='/${currentElement[1].js}'></script>`;
 
-				return accumulatorString;
+					return accumulatorString;
+				} else return ""
 			}, "");
 	};
 
@@ -54,7 +57,7 @@ export default (
 	const helmetInstance = Helmet.renderStatic();
 
 	const html = `
-    <html>
+    <html lang="en">
       <head>
         ${helmetInstance.title.toString()}
         ${helmetInstance.meta.toString()}
@@ -66,7 +69,7 @@ export default (
         <script>window.INITIAL_STATE= ${serialize(
 					reduxStore.getState()
 				)}</script>
-        ${injectAssets(buildAssets)}
+				${injectAssets(buildAssets)}
       </body>
     </html>
   `;

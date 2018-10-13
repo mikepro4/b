@@ -1,0 +1,17 @@
+// blueprint
+@import "../../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../../node_modules/@blueprintjs/core/lib/scss/variables.scss";
+
+// imports
+@import "./imports/colors";
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: $bgColor;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: subpixel-antialiased;
+	color: $black;
+}

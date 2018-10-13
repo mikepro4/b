@@ -1,13 +1,13 @@
 import React from "react";
 import App from "../App";
-import HomePage from "../react/pages/HomePage";
+import Home from "../react/pages/home";
 
 export default [
 	{
 		...App,
 		routes: [
 			{
-				...HomePage,
+				...Home,
 				path: "/",
 				exact: true,
 				params: {

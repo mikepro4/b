@@ -7,17 +7,15 @@ class HomePage extends Component {
 	}
 	renderHead = () => (
 		<Helmet>
-			<title>Home Page</title>
-			<meta property="og:title" content="Homepage" />
+			<title>Blade – Home Page</title>
+			<meta property="og:title" content="Home page" />
 		</Helmet>
 	);
 	render() {
-		// console.log(this.props);
 		return (
 			<div className="route-content">
-				{this.renderHead()}
-
-				<div className="route-page">home page test</div>
+					{this.renderHead()}
+					<div className="route-page">home page test</div>
 			</div>
 		);
 	}

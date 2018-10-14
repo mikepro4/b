@@ -14,10 +14,8 @@ class App extends Component {
 			<div className="app-container">
 
 				<Header />
-
-				<div className="route-container">
-					{renderRoutes(this.props.route.routes)}
-				</div>
+				{renderRoutes(this.props.route.routes)}
+				<div className="page-bg"></div>
 			</div>
 		);
 	}

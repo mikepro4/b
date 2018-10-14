@@ -1,0 +1,15 @@
+.app-container {
+  position: absolute;
+  top: $header-height;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+
+  .route-page {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 3000px;
+  }
+}

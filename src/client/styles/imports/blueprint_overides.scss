@@ -1,21 +1,20 @@
 .bp3-button:not([class*="bp3-intent-"]) {
-  // background: $light-gray2;
   background: $dark-gray2;
   box-shadow: none;
-  height: 40px;
+  height: 38px;
   border: none;
   align-items: center;
   display: flex;
   border-radius: 50px;
   padding: 0 25px;
   transition: all .2s ease-in-out;
+  white-space: nowrap;
 
   .bp3-button-text {
     position: relative;
     top: -1px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    // color: $dark-gray3;
     color: $white;
     font-family: "Medium", sans-serif;
     font-size: 12px;
@@ -25,7 +24,6 @@
   &:hover {
     box-shadow: none;
     border: none;
-    // background: $dark-gray1;
     background: $blade-purple1;
 
     .bp3-button-text {

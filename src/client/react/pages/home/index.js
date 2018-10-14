@@ -15,9 +15,9 @@ class HomePage extends Component {
 	);
 	render() {
 		return (
-			<div className="route-content">
+			<div className="route-page">
 					{this.renderHead()}
-					<div className="route-page">home page test</div>
+					home page test
 			</div>
 		);
 	}

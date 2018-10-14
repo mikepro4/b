@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { withRouter, Link } from "react-router-dom";
 import { Button, Intent } from "@blueprintjs/core";
-
 import MainLinks from "../navigation/main_links/MainLinks"
 
 class Header extends Component {
@@ -10,7 +9,7 @@ class Header extends Component {
 		return (
 			<div className="app-header-container">
 				<div className="app-header-left">
-					<div className="app-logo"></div>
+					<Link to="/"><div className="app-logo"></div></Link>
 				</div>
 
 				<div className="app-header-center">

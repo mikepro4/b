@@ -11,11 +11,15 @@
 @import "./imports/variables";
 @import "./imports/links";
 @import "./imports/blueprint_overides";
+@import "./imports/animations";
 
-//components
+// components
 @import "../App";
 @import "../react/components/header/index";
 @import "../react/components/navigation/main_links/MainLinks";
+
+// pages
+@import "../react/pages/home/index";
 
 body {
 	margin: 0;

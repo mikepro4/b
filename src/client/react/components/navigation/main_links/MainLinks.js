@@ -8,15 +8,6 @@ class MainLinks extends Component {
 		return (
 			<div className="main-links-container">
         <ul className="main-links">
-          <li className={classNames("main-link-container", {
-              "main-link-active"
-							: this.props.location.pathname == "/"
-            })}
-          >
-            <Link to ="/" className="main-link">
-              <span className="main-link-label">Home</span>
-            </Link>
-          </li>
 
 					<li className={classNames("main-link-container", {
               "main-link-active": this.props.location.pathname == "/about"

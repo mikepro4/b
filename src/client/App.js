@@ -14,8 +14,11 @@ class App extends Component {
 			<div className="app-container">
 
 				<Header />
+
 				{renderRoutes(this.props.route.routes)}
+
 				<div className="page-bg"></div>
+				
 			</div>
 		);
 	}

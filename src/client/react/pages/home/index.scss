@@ -1,0 +1,31 @@
+.home-page {
+  .hero-section {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+
+    .home-page-main-title {
+      font-family: 'B', sans-serif;
+      font-size: 55px;
+      color: $dark-gray3;
+      letter-spacing: 1px;
+      line-height: 64px;
+      text-shadow: 0 6px 21px rgba(92,112,128,0.05);
+      margin: 0 0 25px 0;
+      font-weight: 600;
+    }
+
+    .home-page-secondary-title {
+      font-family: 'B', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      margin: 0 0 40px 0;
+      font-weight: 300;
+      color: $dark-gray5;
+    }
+
+    .home-page-main-cta {
+      margin: 0 auto;
+    }
+  }
+}

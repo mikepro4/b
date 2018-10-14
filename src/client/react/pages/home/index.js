@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Button, Intent } from "@blueprintjs/core";
 
 class HomePage extends Component {
 	componentDidMount() {
@@ -15,9 +16,29 @@ class HomePage extends Component {
 	);
 	render() {
 		return (
-			<div className="route-page">
+			<div className="route-page home-page">
 					{this.renderHead()}
-					home page test
+
+					<div className="page-section hero-section">
+
+						<div className="home-page-main-title">
+							Trade the largest selection of crypto perpetuals
+						</div>
+
+						<div className="home-page-secondary-title">
+							Start trading anonymously within seconds
+						</div>
+
+						<Button
+							intent={Intent.PRIMARY}
+							className="home-page-main-cta"
+							text="Start trading"
+							large="true"
+						/>
+
+					</div>
+
+
 			</div>
 		);
 	}

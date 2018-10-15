@@ -12,6 +12,7 @@
 @import "./imports/links";
 @import "./imports/blueprint_overides";
 @import "./imports/animations";
+@import "./imports/crypto_logos";
 
 // components
 @import "../App";
@@ -25,8 +26,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background: $bgColor;
-	font-family: "Regular", sans-serif;
-	font-weight: 300;
+	font-family: "B", sans-serif;
+	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 	color: $black;
 }

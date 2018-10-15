@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Button, Intent } from "@blueprintjs/core";
+import { Button, Intent, Icon } from "@blueprintjs/core";
 
 class HomePage extends Component {
 	componentDidMount() {
@@ -61,6 +61,231 @@ class HomePage extends Component {
 							</div>
 
 						</div>
+					</div>
+
+					<div className="page-section contracts-section">
+						<div className="contracts-section-title">Select contract to trade</div>
+						<div className="contracts-section-subtitle">
+							Blade offers separate order books for perpetuals on 9 crypto-fiat pairs with more to follow
+						</div>
+
+						<ul className="contract-list">
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-btc">
+										<div className="crypto-logo crypto-logo-btc" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">$</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">BTC/USD</div>
+									<div className="contract-price">$6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-btc">
+										<div className="crypto-logo crypto-logo-btc" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">€</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">BTC/EUR</div>
+									<div className="contract-price">€6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-btc">
+										<div className="crypto-logo crypto-logo-btc" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">₩</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">BTC/KRW</div>
+									<div className="contract-price">₩6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-btc">
+										<div className="crypto-logo crypto-logo-btc" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">¥</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">BTC/JPY</div>
+									<div className="contract-price">¥6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-btc">
+										<div className="crypto-logo crypto-logo-bch" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">$</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">BCH/USD</div>
+									<div className="contract-price">¥6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-eos">
+										<div className="crypto-logo crypto-logo-eos" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">$</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">EOS/USD</div>
+									<div className="contract-price">$6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-ltc">
+										<div className="crypto-logo crypto-logo-ltc" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">$</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">LTC/USD</div>
+									<div className="contract-price">$6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-xrp">
+										<div className="crypto-logo crypto-logo-xrp" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">$</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">XRP/USD</div>
+									<div className="contract-price">$6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+
+							<li className="contract-link">
+
+								<div className="contract-logo-container">
+
+									<div className="crypto-logo-container crypto-logo-container-xlm">
+										<div className="crypto-logo crypto-logo-xlm" />
+									</div>
+
+									<div className="crypto-logo-fiat-container">
+										<div className="crypto-logo-fiat">$</div>
+									</div>
+
+								</div>
+
+								<div className="contract-description">
+									<div className="contract-title">XLM/USD</div>
+									<div className="contract-price">$6,210.00</div>
+								</div>
+
+								<div className="contract-arrow-container">
+									<Icon icon="chevron-right" iconSize={20} className="contract-arrow" />
+								</div>
+							</li>
+						</ul>
 					</div>
 
 

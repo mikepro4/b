@@ -150,4 +150,186 @@
       }
     }
   }
+
+  .contracts-section {
+    max-width: 1100px;
+    margin: 70px auto 0 auto;
+
+    .contracts-section-title {
+      text-align: center;
+      font-size: 50px;
+      font-family: "B", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      color: $dark-gray3;
+      margin: 0 0 10px 0;
+    }
+
+    .contracts-section-subtitle {
+      text-align: center;
+      font-size: 20px;
+      font-family: "B", sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.6px;
+      color: $dark-gray5;
+      margin: 0 0 40px 0;
+    }
+
+    ul.contract-list {
+      margin: 70px 0 0 0;
+
+      li.contract-link {
+        width: 280px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+        margin: 0 115px 55px 0;
+        float: left;
+        display: flex;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        .contract-logo-container {
+          display: flex;
+          flex-grow: 0;
+          position: relative;
+          width: 93px;
+          margin: 0 13px 0 0;
+
+          .crypto-logo, .crypto-logo-fiat {
+            position: relative;
+
+            &.crypto-logo-xrp {
+              top: 0px;
+              left: -1px;
+            }
+          }
+
+
+
+          .crypto-logo-container {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            overflow: hidden;
+            z-index: 2;
+            position: relative;
+            border: 3px solid $white;
+            box-sizing: content-box;
+            top: -3px;
+            left: -3px;
+
+            &.crypto-logo-container-btc {
+              background: $btc;
+            }
+
+            &.crypto-logo-container-eos {
+              background: $eos;
+            }
+
+            &.crypto-logo-container-ltc {
+              background: $ltc;
+            }
+
+            &.crypto-logo-container-xrp {
+              background: $xrp;
+            }
+
+            &.crypto-logo-container-xlm {
+              background: $xlm;
+              box-shadow: inset 0 0 0 1px $light-gray4;
+            }
+          }
+
+          .crypto-logo-fiat-container {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            overflow: hidden;
+            z-index: 1;
+            right: 0;
+            position: absolute;
+            background: $light-gray4;
+            color: $dark-gray5;
+            font-size: 22px;
+            font-family: "B", sans-serif;
+            font-weight: 600;
+          }
+        }
+
+        .contract-description {
+          display: flex;
+          flex-grow: 1;
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+
+          .contract-title {
+            font-family: "B", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: $dark-gray3;
+            margin: 0 0 3px 0;
+            transition: all 0.2s;
+          }
+
+          .contract-price {
+            font-family: "B", sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            color: $gray3;
+            letter-spacing: 0.5px;
+            transition: all 0.2s;
+          }
+        }
+
+        .contract-arrow-container {
+          display: block;
+          position: absolute;
+          margin-top: -10px;
+          z-index: 2;
+          top: 50%;
+          right: 0;
+          width: 20px;
+          // overflow: hidden;
+
+          path {
+            transition: all 0.2s;
+          }
+
+
+        }
+
+        &:hover {
+          .contract-description {
+            .contract-title {
+              color: $blade-purple1;
+            }
+
+            .contract-price {
+              color: $blade-purple1;
+            }
+          }
+
+          .bp3-icon {
+            color: $blade-purple1;
+            @extend .animation-moveArrow;
+
+            path {
+              fill: $blade-purple1 ;
+            }
+          }
+        }
+      }
+    }
+  }
 }

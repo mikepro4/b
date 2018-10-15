@@ -54,3 +54,27 @@ $animation_easing: cubic-bezier(0.02, 0.41, 0.42, 0.8);
     opacity: 0;
     animation: fadeInSlide .2s 0.19s $animation_easing forwards;
 }
+
+// --------------------------------------------------
+
+@keyframes moveArrow {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+
+    50% {
+      transform: translateY(0) translateX(10px);
+      opacity: 0;
+    }
+    51% {
+      transform: translateY(-50px) translateX(-50px);
+    }
+    52% {
+      transform: translateY(0) translateX(-10px);
+    }
+}
+
+.animation-moveArrow {
+    animation: moveArrow 0.3s 0s linear forwards;
+}

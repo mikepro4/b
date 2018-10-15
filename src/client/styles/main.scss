@@ -22,6 +22,11 @@
 // pages
 @import "../react/pages/home/index";
 
+
+html {
+	overflow: hidden;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -29,6 +34,7 @@ body {
 	font-family: "B", sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
+	overflow: hidden;
 	color: $black;
 }
 

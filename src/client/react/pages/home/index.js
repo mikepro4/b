@@ -29,13 +29,38 @@ class HomePage extends Component {
 							Start trading anonymously within seconds
 						</div>
 
-						<Button
-							intent={Intent.PRIMARY}
-							className="home-page-main-cta"
-							text="Start trading"
-							large="true"
-						/>
+						<div className="home-page-main-cta">
+							<Button
+								intent={Intent.PRIMARY}
+								text="Start trading"
+								large="true"
+							/>
+						</div>
 
+					</div>
+
+					<div className="page-section laptop-section">
+						<div className="laptop">
+
+							<div className="product-screenshot-container">
+								<img className="product-screenshot" src="/exchange.png" />
+								<div className="product-screenshot-overlay-bg" />
+
+								<div className="product-screenshot-overlay-headline-container">
+									<div className="product-screenshot-overlay-headline-logo" />
+									<div className="product-screenshot-overlay-headline">Trade on Blade</div>
+								</div>
+
+								<div className="product-screenshot-overlay-button-container">
+									<Button
+										text="View live trading"
+										className="button-white"
+									/>
+								</div>
+
+							</div>
+
+						</div>
 					</div>
 
 

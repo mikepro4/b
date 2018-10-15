@@ -89,6 +89,21 @@
       }
     }
   }
+
+  &.button-white {
+    background: $white;
+
+    .bp3-button-text {
+      color: $dark-gray5;
+      top: 0;
+    }
+
+    &:hover {
+      .bp3-button-text {
+        color: $white;
+      }
+    }
+  }
 }
 
 .bp3-button.bp3-intent-primary {
@@ -122,6 +137,7 @@
     box-shadow: 0 8px 50px 0 rgba(124,114,255,0.5);
     border: none;
     background: $blade-purple1;
+    transform: scale(1.02);
 
     .bp3-button-text {
       color: $white;
@@ -129,9 +145,10 @@
   }
 
   &:active {
-    box-shadow: 0 5px 25px 0 rgba(124,114,255,0.35);
+    box-shadow: 0 5px 25px 0 rgba(124,114,255,0.25);
     border: none;
     background: $blade-purple3;
+    transform: scale(1.01);
 
     &:after {
       opacity: 0.6;

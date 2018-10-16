@@ -14,7 +14,7 @@ import buildAssets from "../webpack-assets.json";
 const PORT = process.env.PORT || 3000;
 const BASE_API_URL = process.env.BASE_API_URL || "http://localhost:5000";
 const HOST = process.env.HOST || `localhost:${PORT}`;
-const PROXY_ROUTE = "/api";
+const PROXY_ROUTE = "/api_url";
 const PUBLIC_DIR = "public";
 const STATIC_DIR = "static";
 

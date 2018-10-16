@@ -31,7 +31,7 @@ class MainLinks extends Component {
               "main-link-active": this.props.location.pathname == "/api_docs"
             })}
           >
-            <Link to ="/faq" className="main-link">
+            <Link to ="/api" className="main-link">
               <span className="main-link-label">API DOCS</span>
             </Link>
           </li>

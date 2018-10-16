@@ -20,14 +20,17 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="app-container" ref="app">
-
+			<div className="app">
 				<Header />
 
-				{renderRoutes(this.props.route.routes)}
+				<div className="app-container" ref="app">
 
-				<div className="page-bg"></div>
 
+					{renderRoutes(this.props.route.routes)}
+
+					<div className="page-bg"></div>
+
+				</div>
 			</div>
 		);
 	}

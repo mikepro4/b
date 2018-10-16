@@ -13,6 +13,7 @@
   position: relative;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   user-select: none;
+  -webkit-overflow-scrolling: touch;
 
   .bp3-button-text {
     position: relative;
@@ -130,6 +131,7 @@
   -webkit-transform: translate3d(0,0,0);
   -webkit-backface-visiblity: hidden;
   user-select: none;
+  -webkit-overflow-scrolling: touch;
 
 
   .bp3-button-text {

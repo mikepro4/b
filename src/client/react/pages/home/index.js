@@ -5,9 +5,6 @@ import { Helmet } from "react-helmet";
 import { Button, Intent, Icon } from "@blueprintjs/core";
 
 class HomePage extends Component {
-	componentDidMount() {
-		console.log("render home page");
-	}
 	renderHead = () => (
 		<Helmet>
 			<title>Blade – Home Page</title>

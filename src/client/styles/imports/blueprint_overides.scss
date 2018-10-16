@@ -11,6 +11,8 @@
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  user-select: none;
 
   .bp3-button-text {
     position: relative;
@@ -124,6 +126,11 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 8px 35px 0 rgba(124,114,255,0.39);
+  // -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visiblity: hidden;
+  user-select: none;
+
 
   .bp3-button-text {
     position: relative;
@@ -142,7 +149,6 @@
     box-shadow: 0 8px 50px 0 rgba(124,114,255,0.5);
     border: none;
     background: $blade-purple1;
-    // transform: scale(1.02);
 
 
     .bp3-button-text {
@@ -154,8 +160,6 @@
     box-shadow: 0 5px 25px 0 rgba(124,114,255,0.25);
     border: none;
     background: $blade-purple3;
-    // transform: scale(1.01);
-
     &:after {
       opacity: 0.6;
     }
@@ -211,40 +215,3 @@
     letter-spacing: 2px;
   }
 }
-
-// .pt-button.pt-intent-success,
-// .pt-button.pt-intent-success:hover,
-// .pt-button.pt-intent-success:active {
-// 	background: #43bf4d;
-// 	border: none;
-// 	box-shadow: none;
-// 	background-image: none;
-// }
-//
-// .pt-button.pt-intent-primary,
-// .pt-button.pt-intent-primary:hover,
-// .pt-button.pt-intent-primary:active {
-// 	background: $cobalt4;
-// 	border: none;
-// 	box-shadow: none;
-// 	background-image: none;
-// }
-//
-// .pt-button:not([class*="pt-intent-"]):active,
-// .pt-button:not([class*="pt-intent-"]).pt-active {
-// 	background: $cobalt4;
-// 	color: $white;
-// 	box-shadow: none;
-//
-// 	&:before {
-// 		color: $white;
-// 	}
-// }
-//
-// .pt-button-group {
-// 	display: flex;
-//
-// 	button.pt-button {
-// 		flex-grow: 1;
-// 	}
-// }

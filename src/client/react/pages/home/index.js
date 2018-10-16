@@ -288,6 +288,8 @@ class HomePage extends Component {
 						</ul>
 					</div>
 
+					<div className="page-section info-section"></div>
+
 
 			</div>
 		);

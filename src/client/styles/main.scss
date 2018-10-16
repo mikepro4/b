@@ -22,7 +22,6 @@
 // pages
 @import "../react/pages/home/index";
 
-
 html {
 	overflow: hidden;
 }
@@ -36,6 +35,10 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	overflow: hidden;
 	color: $black;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 // Selection

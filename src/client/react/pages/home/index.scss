@@ -4,6 +4,7 @@
     max-width: 800px;
     margin: 40px auto;
     text-align: center;
+    // @extend .animation-fadeInScale;
 
     .home-page-main-title {
       font-family: 'B', sans-serif;
@@ -41,6 +42,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // opacity: 0;
+    // animation: fadeInSlide 0.7s 1s $animation_easing forwards;
 
     .laptop {
       margin: 25px 0 0 0;

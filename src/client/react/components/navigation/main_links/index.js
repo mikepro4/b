@@ -16,7 +16,7 @@ class MainLinks extends Component {
               "main-link-active": this.isActivePath("/about")
             })}
           >
-            <Link to ="/about" className="main-link">
+            <Link to ="/company/about" className="main-link">
               <span className="main-link-label">About</span>
             </Link>
           </li>

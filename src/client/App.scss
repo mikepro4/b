@@ -20,14 +20,65 @@
 
     .page-left-sidebar {
       position: fixed;
-      top: 50 + $header-height;
+      top: 60 + $header-height;
       width: 250px;
       left: 0;
       bottom: 0;
+
+      .page-left-sidebar-title {
+        text-transform: uppercase;
+        color: $dark-gray2;
+        font-size: 18px;
+        letter-spacing: 1.3px;
+        margin: 0 0 20px 20px;
+        font-weight: 600;
+      }
+
+      ul.page-left-sidebar-menu {
+        li.page-left-sidebar-menu-link {
+          a {
+            display: block;
+            padding: 10px 0 10px 20px;
+            margin: 0 0 5px 0;
+            color: $gray2;
+            border-left: 0;
+            transition: all .2s;
+            position: relative;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            letter-spacing: 0.3px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              width: 0;
+              left: 0;
+              transition: all 0.3s;
+              background: $blade-purple1
+            }
+
+            &:hover {
+              color: $dark-gray2;
+              background: $light-gray5;
+            }
+
+            &.active {
+              color: $blade-purple1;
+              background: rgba($blade-purple1, 0.07);
+
+              &:before {
+                width: 4px;
+              }
+            }
+          }
+        }
+      }
     }
 
     .page-content-container {
-      max-width: 820px;
+      max-width: 800px;
       margin: 25px auto 150px auto;
 
       .healine-divider {
@@ -86,10 +137,21 @@
         font-size: 24px;
         color: $dark-gray2;
         line-height: 34px;
-        border-left: 4px solid $blade-purple1;
         display: block;
         padding: 0 0 0 30px;
         margin: 30px 0 30px 2px;
+        position: relative;
+
+        &:after {
+          content: "";
+          width: 4px;
+          background: $blade-purple1;
+          position: absolute;
+          bottom: 5px;
+          top: 9px;
+          left: 0;
+        }
+
       }
 
       mark {
@@ -136,7 +198,7 @@
         color: $gray2;
         font-size: 11px;
         line-height: 18px;
-        padding: 0 0 10px 0;
+        padding: 0 0 15px 0;
         letter-spacing: 0.2px;
         font-weight: 400;
       }
@@ -184,7 +246,7 @@
         color: $dark-gray2;
         line-height: 30px;
         letter-spacing: 0.4px;
-        margin: 15px 0 10px 0;
+        margin: 20px 0 10px 0;
         position: relative;
       }
 
@@ -195,7 +257,7 @@
         color: $dark-gray2;
         line-height: 20px;
         letter-spacing: 0.4px;
-        margin: 20px 0 5px 0;
+        margin: 25px 0 5px 0;
         position: relative;
       }
 
@@ -295,6 +357,30 @@
         }
       }
     }
+
+    .contact-link-container {
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+
+      .contact-link-label {
+        font-size: 12px;
+        margin: 0 0 2px 0;
+        color: $gray2;
+      }
+
+      .contact-link {
+        font-size: 24px;
+        color: $gray2;
+        @extend .line-hover;
+
+        &:hover {
+          color: $blade-purple1
+        }
+      }
+    }
+
   }
 
   .page-bg {

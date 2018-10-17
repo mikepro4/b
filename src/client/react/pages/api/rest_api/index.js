@@ -24,11 +24,6 @@ class RestApi extends Component {
 
 				<small>Some really nice small text.</small>
 
-				<blockquote>
-					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
-					market and user data <a href="/">some phrase here</a> is available and updates in real-time.
-				</blockquote>
-
 
 
 				<p><a href="http://localhost:3000/api/rest_api">http://localhost:3000/api/rest_api</a></p>
@@ -52,10 +47,7 @@ class RestApi extends Component {
 
 				<small>Some really nice small text.</small>
 
-				<mark>
-					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
-					market and user data <a href="/">some phrase here</a> is available and updates in real-time.
-				</mark>
+
 
 				<h3>H4 Section Title</h3>
 
@@ -68,6 +60,11 @@ class RestApi extends Component {
 				</p>
 
 				<em> Shortet text in em</em>
+
+				<blockquote>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data <a href="/">some phrase here</a> is available and updates in real-time.
+				</blockquote>
 
 				<ul>
 					<li>
@@ -112,6 +109,11 @@ class RestApi extends Component {
 					<li>Some list item 3</li>
 					<li>Some list item 4</li>
 				</ul>
+
+				<mark>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data <a href="/">some phrase here</a> is available and updates in real-time.
+				</mark>
 
 				<p>
 					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All

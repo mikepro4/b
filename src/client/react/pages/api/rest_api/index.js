@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 class RestApi extends Component {
@@ -15,7 +14,188 @@ class RestApi extends Component {
 			<div className="page-content">
 				{this.renderHead()}
 
-        Rest api content
+        <h1>Rest API</h1>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+				<h3>H4 Section Title</h3>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+				<ul>
+					<li>
+						Some list item 1
+
+						<ul>
+							<li>
+								Some list item 1 a
+							</li>
+
+							<li>
+								Some list item 1 a longer item here
+							</li>
+
+							<li>
+							BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+							market and user data is available and updates in real-time.
+							</li>
+
+							<li>
+								Some list item 1
+								<ul>
+									<li>
+										Some list item 1 a
+									</li>
+
+									<li>
+									BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+
+									<h4>Something here</h4>
+
+									market and user data is available and updates in real-time.BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+									market and user data is available and updates in real-time.BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+									market and user data is available and updates in real-time.BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+									market and user data is available and updates in real-time.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Some list item 2</li>
+					<li>Some list item 3</li>
+					<li>Some list item 4</li>
+				</ul>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time. BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+				<ol>
+					<li>
+						Some list item 1
+
+						<ol>
+							<li>
+								Some list item 1 a
+							</li>
+
+							<li>
+								Some list item 1
+							</li>
+						</ol>
+					</li>
+					<li>Some list item 2</li>
+					<li>Some list item 3</li>
+					<li>Some list item 4</li>
+				</ol>
+
+				<p>
+					The BitMEX APIs are open and complete. Every
+					function used by the BitMEX website is exposed via the API,
+					allowing developers full control to build any kind of application on top of BitMEX.
+				</p>
+
+				<p>
+					The completeness of BitMEX’s API is best-in-class and unique in the trading space.
+				</p>
+
+				<h2>H2 Section Title</h2>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+				<h3>H3 Section Title</h3>
+
+				<p>
+					The BitMEX APIs are open and complete. Every
+					function used by the BitMEX website is exposed via the API,
+					allowing developers full control to build any kind of application on top of BitMEX.
+				</p>
+
+				<h4>H4 Section Title</h4>
+
+				<p>
+					The completeness of BitMEX’s API is best-in-class and unique in the trading space.
+				</p>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+				<h2>H2 Section Title</h2>
+
+				<p>
+					The completeness of BitMEX’s API is best-in-class and unique in the trading space.
+				</p>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+				<h2>The completeness of BitMEX’s API is best-in-class and unique in the trading space.</h2>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+
+
+				<h5>H5 Section Title</h5>
+				<p>
+					The completeness of BitMEX’s API is best-in-class and unique in the trading space.
+				</p>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+
+				<h6>H6 Section Title</h6>
+				<p>
+					The completeness of BitMEX’s API is best-in-class and unique in the trading space.
+				</p>
+
+				<p>
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All
+					market and user data is available and updates in real-time.
+				</p>
+
+
 			</div>
 		);
 	}
@@ -27,7 +207,5 @@ function mapStateToProps() {
 }
 
 export default {
-	component: withRouter(
-		connect(mapStateToProps, {})(RestApi)
-	)
+	component: connect(mapStateToProps, {})(RestApi)
 }

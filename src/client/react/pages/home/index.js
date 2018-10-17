@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Button, Intent, Icon } from "@blueprintjs/core";
 
@@ -287,7 +286,6 @@ class HomePage extends Component {
 
 					<div className="page-section info-section"></div>
 
-
 			</div>
 		);
 	}
@@ -299,7 +297,5 @@ function mapStateToProps() {
 }
 
 export default {
-	component: withRouter(
-		connect(mapStateToProps, {})(HomePage)
-	)
+	component: connect(mapStateToProps, {})(HomePage)
 }

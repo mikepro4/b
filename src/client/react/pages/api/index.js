@@ -20,7 +20,7 @@ class ApiPage extends Component {
 	);
 	render() {
 		return (
-			<div className="route-page api-page">
+			<div className="route-page route-page-white">
 
         <div className="page-left-sidebar">
           <Link to="/api/overview">Overview</Link>

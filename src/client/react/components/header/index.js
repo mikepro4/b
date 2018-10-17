@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button, Intent } from "@blueprintjs/core";
-import MainLinks from "../navigation/main_links/MainLinks"
+import MainLinks from "../navigation/main_links/"
 
 class Header extends Component {
 	render() {
@@ -35,4 +35,4 @@ function mapStateToProps() {
 	return {};
 }
 
-export default connect(mapStateToProps, {})(withRouter(Header));
+export default connect(mapStateToProps, {})(Header);

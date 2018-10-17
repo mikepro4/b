@@ -17,7 +17,6 @@
 // components
 @import "../App";
 @import "../react/components/header/index";
-@import "../react/components/navigation/main_links/MainLinks";
 
 // pages
 @import "../react/pages/home/index";
@@ -39,7 +38,7 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	overflow: hidden;
 	color: $black;
-	
+
 }
 
 * {
@@ -57,4 +56,22 @@ body {
 ::-moz-selection {
   background: $blade-purple1;
   color: $white;
+}
+
+// Links
+// -------------------------
+
+
+a {
+	color: $blade-purple1;
+	text-decoration: none;
+
+	&:hover {
+		color: $blade-purple2;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: $blade-purple4;
+	}
 }

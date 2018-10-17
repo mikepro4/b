@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 class Overview extends Component {
@@ -27,7 +26,5 @@ function mapStateToProps() {
 }
 
 export default {
-	component: withRouter(
-		connect(mapStateToProps, {})(Overview)
-	)
+	component: connect(mapStateToProps, {})(Overview)
 }

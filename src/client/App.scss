@@ -63,6 +63,84 @@
         font-weight: 400;
       }
 
+      b {
+        font-weight: 600;
+      }
+
+      strong {
+        font-weight: 600;
+        color: $dark-gray2;
+      }
+
+      i {
+        font-style: italic;
+      }
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      em {
+        font-size: 24px;
+        color: $dark-gray2;
+        line-height: 34px;
+        border-left: 4px solid $blade-purple1;
+        display: block;
+        padding: 0 0 0 30px;
+        margin: 30px 0 30px 2px;
+      }
+
+      mark {
+        font-size: 24px;
+        color: $white;
+        line-height: 34px;
+        display: block;
+        padding: 34px;
+        margin: 30px 0 30px 2px;
+        background-image: linear-gradient(215deg, #CA95FF 0%, #726EFF 39%, #6F6AFF 45%, #1D16FF 100%);
+        box-shadow: 0 8px 35px 0 rgba(124,114,255,0.39);
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        font-weight: 300;
+
+        a {
+          color: $white;
+          font-weight: 600;
+        }
+      }
+
+      blockquote {
+        font-size: 24px;
+        color: $white;
+        line-height: 34px;
+        display: block;
+        padding: 34px;
+        margin: 30px 0 30px 2px;
+        background-image: linear-gradient(210deg, #1C272F 0%, #334E63 100%);
+        box-shadow: 0 8px 35px 0 rgba(32,43,51,0.22);
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        font-weight: 300;
+
+        a {
+          color: $white;
+          font-weight: 600;
+        }
+      }
+
+      small {
+        color: $gray2;
+        font-size: 11px;
+        line-height: 18px;
+        padding: 0 0 10px 0;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+      }
+
       h1 {
         font-family: "B", sans-serif;
         font-weight: 600;
@@ -216,7 +294,6 @@
           }
         }
       }
-
     }
   }
 

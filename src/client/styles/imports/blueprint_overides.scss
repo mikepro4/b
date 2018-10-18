@@ -17,7 +17,7 @@
 
   .bp3-button-text {
     position: relative;
-    top: -1px;
+    top: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: $white;
@@ -107,6 +107,12 @@
         color: $white;
       }
     }
+  }
+
+  &.bp3-large  {
+    min-height: 50px;
+    
+    .bp3-button-text  {}
   }
 }
 

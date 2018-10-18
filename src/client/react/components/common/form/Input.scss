@@ -1,0 +1,107 @@
+.input-group  {
+  height: 54px;
+  position: relative;
+  margin: 0px 0 10px 0;
+  display: flex;
+
+  &:before {
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    background-color: $light-gray4;
+    height: 1px;
+    z-index: 1;
+      transition: all .15s $animation-easing;
+  }
+
+  &:after {
+    content: "";
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    background-color: $blade-purple1;
+    transition: all .15s $animation-easing;
+    height: 1px;
+    z-index: 2
+  }
+
+  &:hover {
+    &:before {
+      background-color: $light-gray1;
+    }
+  }
+
+  &.input-focused {
+    &:after {
+      right: 0
+    }
+  }
+
+  .input-placeholder {
+    position: absolute;
+    z-index: 1;
+    transition: all 0.1s $animation-easing;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.input-placeholder-small {
+      top: 0;
+      font-size: 11px;
+      color: $gray3;
+    }
+
+    &.input-placeholder-large {
+      font-size: 20px;
+      color: $gray3;
+      top: 13px;
+    }
+  }
+
+  .blade-input {
+    height: 58px;
+    padding: 0 0 0 0;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: none;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+
+    &.blade-intent-success {
+
+    }
+
+    &.blade-intent-danger {
+
+    }
+  }
+
+  .input-error {
+    display: none;
+  }
+
+  &.input-empty {
+  }
+
+  &.input-touched {
+
+  }
+
+  &.input-valid {
+
+  }
+
+  &.input-invalid {}
+
+
+}

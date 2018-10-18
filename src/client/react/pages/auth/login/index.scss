@@ -1,8 +1,26 @@
 .auth-container {
   width: 460px;
-  height: 420px;
   background: $white;
   border-radius: 4px;
   margin-top: -150px;
-  padding: 30px;
+  padding: 40px;
+
+  .auth-logo {
+    margin: 0 0 55px 0;
+  }
+
+  .auth-headline {
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: $dark-gray2;
+    margin: 0 0 15px 0;
+    position: relative;
+    left: -3px;
+  }
+
+  .auth-form {
+    button {
+      margin: 35px auto 0 auto;
+    }
+  }
 }

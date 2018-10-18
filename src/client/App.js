@@ -28,8 +28,6 @@ class App extends Component {
 
 					{renderRoutes(this.props.route.routes)}
 
-					<div className="page-bg"></div>
-
 				</div>
 			</div>
 		);

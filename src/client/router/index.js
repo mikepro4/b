@@ -12,6 +12,8 @@ import Brand from "../react/pages/company/brand";
 import Team from "../react/pages/company/team";
 
 import FAQ from "../react/pages/faq/";
+import Login from "../react/pages/auth/login";
+import Signup from "../react/pages/auth/signup";
 
 export default [
 	{
@@ -83,6 +85,20 @@ export default [
 				path: "/faq",
 				params: {
 					name: "faq"
+				}
+			},
+			{
+				...Login,
+				path: "/auth/login",
+				params: {
+					name: "login"
+				}
+			},
+			{
+				...Signup,
+				path: "/auth/signup",
+				params: {
+					name: "signup"
 				}
 			},
 		]

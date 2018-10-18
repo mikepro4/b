@@ -6,6 +6,12 @@ import MainLinks from "../navigation/main_links/"
 
 class Header extends Component {
 	render() {
+		let pathname = this.props.location.pathname.toString()
+		let authPage = pathname.includes("/auth/")
+		if (authPage) {
+			return (<div></div>)
+		}
+
 		return (
 			<div className="app-header-container">
 				<div className="app-header-left">
@@ -19,10 +25,10 @@ class Header extends Component {
 				<div className="app-header-right">
 					<ul className="app-auth-menu">
 						<li className="app-auth-link">
-							<Button minimal={true}>Login</Button>
+							<Link to="/auth/login"><Button minimal={true}>Login</Button></Link>
 						</li>
 						<li className="app-auth-link">
-							<Button>Sign up</Button>
+							<Link to="/auth/signup"><Button>Sign up</Button></Link>
 						</li>
 					</ul>
 				</div>
@@ -31,8 +37,10 @@ class Header extends Component {
 	}
 }
 
-function mapStateToProps() {
-	return {};
+function mapStateToProps(state) {
+	return {
+		location: state.router.location
+	};
 }
 
 export default connect(mapStateToProps, {})(Header);

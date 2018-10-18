@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 import { Button, Intent } from "@blueprintjs/core";
 
 import Input from "../../../components/common/form/Input";
+import Checkbox from "../../../components/common/form/Checkbox";
 
 
 class LoginForm extends Component {
@@ -28,6 +29,21 @@ class LoginForm extends Component {
           placeholder="Password"
           ref="password"
         />
+
+				<div className="login-form-footer">
+					<div className="login-form-signed-in-toggle">
+						<Field
+							name="keepSignedIn"
+							component={Checkbox}
+							label="Keep me signed in"
+							ref="keepSignedIn"
+						/>
+					</div>
+
+					<div className="login-form-forgot-password">
+						Forgot password?
+					</div>
+				</div>
 
         <Button
 					disabled={this.props.pristine}

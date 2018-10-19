@@ -18,7 +18,7 @@ class LoginForm extends Component {
 		return (
 				<div className="auth-form auth-login-form">
 					<Form onSubmit={handleSubmit} autoComplete="off">
-						<div className="auth-headline transition-element">Signup</div>
+						<div className="auth-headline transition-element">Sign up</div>
 
 						<div className="transition-element">
 			        <Field
@@ -67,7 +67,7 @@ class LoginForm extends Component {
 							className="submit-button transition-element"
 							loading={this.props.loading}
 							type="submit"
-							text="Login"
+							text="Sign up"
 		          large="true"
 						/>
 

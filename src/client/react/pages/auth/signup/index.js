@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Helmet } from "react-helmet";
 import classnames from "classnames";
 import { Link } from "react-router-dom";
+import { Button } from "@blueprintjs/core";
 import qs from "qs";
 
 import SignupForm from "./signup_form"
@@ -36,12 +37,18 @@ class Signup extends Component {
 
 	render() {
 		return (
-			<SignupForm
+			<div>
+				<SignupForm
 					ref="signupForm"
 					enableReinitialize="true"
 					loading={this.state.loading}
 					onSubmit={this.handleSubmit.bind(this)}
 				/>
+				<div className="auth-footer-link">
+					<span className="auth-footer-link-label">Already have an account?</span>
+					<Link to="/auth/login"><Button className="button-white">Login</Button></Link>
+				</div>
+			</div>
 		);
 	}
 }

@@ -5,6 +5,7 @@
   .blade-checkbox-container {
     display: flex;
     cursor: pointer;
+    user-select: none;
 
     .blade-checkbox-control {
       height: 16px;
@@ -14,6 +15,8 @@
       transition: all 0.2s;
       border: 1px solid $light-gray3;
       margin: 0 7px 0 0;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
 
     .blade-checkbox {
@@ -21,7 +24,11 @@
       left: -100px;
 
       &:checked + .blade-checkbox-control {
-        background: $light-gray3
+        background: $light-gray3;
+        background-size: 10px 8px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='10px' height='8px' viewBox='0 0 10 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Ept-icon-tick%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3Cpath d='M8.75,1.875 C8.575,1.875 8.41875,1.94375 8.30625,2.05625 L3.75,6.61875 L1.69375,4.55625 C1.58125,4.44375 1.425,4.375 1.25,4.375 C0.90625,4.375 0.625,4.65625 0.625,5 C0.625,5.175 0.69375,5.33125 0.80625,5.44375 L3.30625,7.94375 C3.41875,8.05625 3.575,8.125 3.75,8.125 C3.925,8.125 4.08125,8.05625 4.19375,7.94375 L9.19375,2.94375 C9.30625,2.83125 9.375,2.675 9.375,2.5 C9.375,2.15625 9.09375,1.875 8.75,1.875 Z' id='path-1'%3E%3C/path%3E%3C/defs%3E%3Cg id='Page-3' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard-10-Copy-112' transform='translate(-671.000000, -592.000000)'%3E%3Cg id='pt-icon-tick' transform='translate(671.000000, 591.000000)'%3E%3Cmask id='mask-2' fill='white'%3E%3Cuse xlink:href='%23path-1'%3E%3C/use%3E%3C/mask%3E%3Cuse fill='%23000000' fill-rule='nonzero' xlink:href='%23path-1'%3E%3C/use%3E%3Cg id='Light-/-Icon-/-Default' mask='url(%23mask-2)' fill='%235C7080' fill-rule='evenodd'%3E%3Crect id='Rectangle' x='0' y='0' width='10' height='10'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       }
     }
   }

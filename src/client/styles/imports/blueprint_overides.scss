@@ -43,16 +43,18 @@
   }
 
   &:hover {
-    box-shadow: none;
-    border: none;
-    background: $blade-purple1;
+    &:not([disabled]) {
+      box-shadow: none;
+      border: none;
+      background: $blade-purple1;
 
-    .bp3-button-text {
-      color: $white;
-    }
+      .bp3-button-text {
+        color: $white;
+      }
 
-    &:after {
-      opacity: 1;
+      &:after {
+        opacity: 1;
+      }
     }
   }
 
@@ -111,7 +113,7 @@
 
   &.bp3-large  {
     min-height: 50px;
-    
+
     .bp3-button-text  {}
   }
 }

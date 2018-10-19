@@ -122,8 +122,6 @@ class RestApi extends Component {
 					market and user data is available and updates in real-time.
 				</p>
 
-				<mark>One sentence title</mark>
-
 				<ol>
 					<li>
 						Some list item 1
@@ -148,8 +146,6 @@ class RestApi extends Component {
 					function used by the BitMEX website is exposed via the API,
 					allowing developers full control to build any kind of application on top of BitMEX.
 				</p>
-
-				<blockquote>Smaller title in blockquote</blockquote>
 
 				<em>
 					BitMEX offers a fully featured REST API and a powerful streaming WebSocket API. All

@@ -5,10 +5,9 @@ import classnames from "classnames";
 import { Link } from "react-router-dom";
 import qs from "qs";
 
-import LoginForm from './login_form'
-import Logo from "../../../components/svg/logo"
+import ForgotPasswordForm from './forgot_password_form'
 
-class Login extends Component {
+class ForgotPassword extends Component {
 	state = {
 		loading: false
 	}
@@ -37,9 +36,8 @@ class Login extends Component {
 
 	render() {
 		return (
-			<LoginForm
-					ref="loginForm"
-					enableReinitialize="true"
+			<ForgotPasswordForm
+					ref="ForgotPasswordForm"
 					loading={this.state.loading}
 					onSubmit={this.handleSubmit.bind(this)}
 				/>
@@ -55,5 +53,5 @@ function mapStateToProps(state) {
 }
 
 export default {
-	component: connect(mapStateToProps, {})(Login)
+	component: connect(mapStateToProps, {})(ForgotPassword)
 }

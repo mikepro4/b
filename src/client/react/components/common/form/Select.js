@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import classnames from "classnames";
+import { Icon } from "@blueprintjs/core";
 
-class Input extends Component {
+
+class Select extends Component {
   state = {
     inputFocused: false
   };
@@ -70,14 +72,17 @@ class Input extends Component {
           {this.props.meta.touched && !this.props.meta.valid ? this.props.meta.error : this.props.placeholder}
         </div>
 
-        <input
+        <select
           {...this.props.input}
           className={inputClassName}
           type={this.props.type}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
           autoComplete="new-password"
-        />
+        >{this.props.children}</select>
+
+        <Icon icon="expand-all" iconSize={16}  className="select-icon"/>
+
 
       </div>
 		);
@@ -89,4 +94,4 @@ function mapStateToProps(state) {
 	};
 }
 
-export default connect(mapStateToProps, {})(Input);
+export default connect(mapStateToProps, {})(Select);

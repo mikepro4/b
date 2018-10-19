@@ -8,6 +8,7 @@ import { Button, Intent, Spinner } from "@blueprintjs/core";
 
 import Input from "../../../components/common/form/Input";
 import Checkbox from "../../../components/common/form/Checkbox";
+import Select from "../../../components/common/form/Select";
 
 
 class LoginForm extends Component {
@@ -17,14 +18,23 @@ class LoginForm extends Component {
 		return (
 				<div className="auth-form auth-login-form">
 					<Form onSubmit={handleSubmit} autoComplete="off">
-						<div className="auth-headline transition-element">Login</div>
+						<div className="auth-headline transition-element">Signup</div>
 
 						<div className="transition-element">
 			        <Field
-			          name="login"
+			          name="username"
 			          component={Input}
-			          placeholder="Username or email"
-			          ref="login"
+			          placeholder="Username"
+			          ref="usernam"
+			        />
+						</div>
+
+            <div className="transition-element">
+			        <Field
+			          name="email"
+			          component={Input}
+			          placeholder="Email address"
+			          ref="email"
 			        />
 						</div>
 
@@ -38,19 +48,18 @@ class LoginForm extends Component {
 			        />
 						</div>
 
-						<div className="login-form-footer transition-element">
-							<div className="login-form-signed-in-toggle">
-								<Field
-									name="keepLoggedIn"
-									component={Checkbox}
-									label="Keep me logged in"
-									ref="keepSignedIn"
-								/>
-							</div>
-
-							<div className="login-form-forgot-password">
-								<Link to="/auth/forgot_password">Forgot password?</Link>
-							</div>
+            <div className="transition-element">
+			        <Field
+			          name="country"
+			          component={Select}
+			          placeholder="Country of residence"
+			          ref="country"
+								type="password"
+			        >
+                <option />
+                <option key="1" value="us">United States</option>
+                <option key="2" value="ru">Russia</option>
+              </Field>
 						</div>
 
 		        <Button
@@ -63,7 +72,7 @@ class LoginForm extends Component {
 						/>
 
 						<div className="login-form-footer-text transition-element">
-							By logging in, you agree to Blade's <a>Terms of Service</a> and updated <a>Privacy Policy</a>
+							By signing up, you agree to Blade's <a>Terms of Service</a> and updated <a>Privacy Policy</a>
 						</div>
 					</Form>
 				</div>

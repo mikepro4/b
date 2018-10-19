@@ -97,3 +97,22 @@ $animation_easing: cubic-bezier(0.02, 0.41, 0.42, 0.8);
     opacity: 0;
     animation: fadeInScale 0.5s 0.5s $animation_easing forwards;
 }
+
+// --------------------------------------------------
+
+@keyframes slideBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(10px) ;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+.animation-slideBottom {
+    opacity: 0;
+    animation: slideBottom 0.2s linear forwards;
+}

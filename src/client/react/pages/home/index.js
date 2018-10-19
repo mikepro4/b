@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import { Button, Intent, Icon } from "@blueprintjs/core";
 
 class HomePage extends Component {
@@ -30,11 +31,13 @@ class HomePage extends Component {
 							</div>
 
 							<div className="home-page-main-cta">
-								<Button
-									intent={Intent.PRIMARY}
-									text="Start trading"
-									large="true"
-								/>
+								<Link to="/auth/signup">
+									<Button
+										intent={Intent.PRIMARY}
+										text="Start trading"
+										large="true"
+									/>
+								</Link>
 							</div>
 
 						</div>

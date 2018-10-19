@@ -4,21 +4,14 @@ import { Helmet } from "react-helmet";
 import classnames from "classnames";
 import { Link } from "react-router-dom";
 import qs from "qs";
+import { renderRoutes } from "react-router-config";
 
-import LoginForm from './login_form'
-import Logo from "../../../components/svg/logo"
+import Logo from "../../components/svg/logo"
 
-class Login extends Component {
+class Auth extends Component {
 	state = {
 		loading: false
 	}
-
-	renderHead = () => (
-		<Helmet>
-			<title>Blade – Login</title>
-			<meta property="og:title" content="Login" />
-		</Helmet>
-	);
 
 	handleSubmit = values => {
 		console.log(values);
@@ -37,12 +30,17 @@ class Login extends Component {
 
 	render() {
 		return (
-			<LoginForm
-					ref="loginForm"
-					enableReinitialize="true"
-					loading={this.state.loading}
-					onSubmit={this.handleSubmit.bind(this)}
-				/>
+			<div className="route-page route-page-fullscreen route-page-centered">
+
+				<div className="auth-container">
+
+					<div className="auth-logo"><Link to="/"><Logo/></Link></div>
+
+					{renderRoutes(this.props.route.routes)}
+
+				</div>
+
+			</div>
 		);
 	}
 }
@@ -55,5 +53,5 @@ function mapStateToProps(state) {
 }
 
 export default {
-	component: connect(mapStateToProps, {})(Login)
+	component: connect(mapStateToProps, {})(Auth)
 }

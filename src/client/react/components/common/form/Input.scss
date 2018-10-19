@@ -1,4 +1,4 @@
-.input-group  {
+.input-text  {
   height: 54px;
   position: relative;
   margin: 0px 0 10px 0;
@@ -14,7 +14,7 @@
     background-color: $light-gray4;
     height: 1px;
     z-index: 1;
-      transition: all .15s $animation-easing;
+    transition: all .15s $animation-easing;
   }
 
   &:after {
@@ -30,12 +30,6 @@
     z-index: 2
   }
 
-  &:hover {
-    &:before {
-      background-color: $light-gray1;
-    }
-  }
-
   &.input-focused {
     &:after {
       right: 0
@@ -45,23 +39,47 @@
   .input-placeholder {
     position: absolute;
     z-index: 1;
-    transition: all 0.1s $animation-easing;
     font-weight: 300;
     letter-spacing: 0.3px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: $gray4;
 
     &.input-placeholder-small {
-      top: 0;
+      top: 4px;
+      opacity: 0;
+      visibility: hidden;
       font-size: 11px;
-      color: $gray3;
+      transition: all 0.2s $animation-easing;
+      z-index:100;
+
+      &.input-placeholder-small-visible {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+      }
     }
 
     &.input-placeholder-large {
       font-size: 20px;
-      color: $gray3;
       top: 13px;
+      opacity: 0;
+      transition: all 0.2s $animation-easing;
+
+      &.input-placeholder-large-visible {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    &:before {
+      background-color: $light-gray1;
+    }
+
+    .input-placeholder  {
+      color: $gray3;
     }
   }
 
@@ -75,33 +93,40 @@
     position: relative;
     z-index: 2;
     width: 100%;
-
-
-    &.blade-intent-success {
-
-    }
-
-    &.blade-intent-danger {
-
-    }
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .input-error {
-    display: none;
+    position: absolute;
+    z-index: 1;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $red4;
+    top: 0;
+    opacity: 1;
+    font-size: 11px;
   }
 
-  &.input-empty {
+  &.input-invalid {
+    &:after {
+      right: 0;
+      background-color: $red4;
+    }
   }
 
-  &.input-touched {
+  .select-icon {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 17px;
 
+    path {
+      fill: $gray4
+    }
   }
-
-  &.input-valid {
-
-  }
-
-  &.input-invalid {}
-
-
 }

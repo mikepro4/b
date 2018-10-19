@@ -12,7 +12,10 @@ import Brand from "../react/pages/company/brand";
 import Team from "../react/pages/company/team";
 
 import FAQ from "../react/pages/faq/";
+
+import Auth from "../react/pages/auth/";
 import Login from "../react/pages/auth/login";
+import ForgotPassword from "../react/pages/auth/forgot_password";
 import Signup from "../react/pages/auth/signup";
 
 export default [
@@ -88,19 +91,35 @@ export default [
 				}
 			},
 			{
-				...Login,
-				path: "/auth/login",
+				...Auth,
+				path: "/auth",
 				params: {
-					name: "login"
-				}
-			},
-			{
-				...Signup,
-				path: "/auth/signup",
-				params: {
-					name: "signup"
-				}
-			},
+					name: "auth",
+				},
+				routes: [
+					{
+						...Login,
+						path: "/auth/login",
+						params: {
+							name: "login"
+						}
+					},
+					{
+						...ForgotPassword,
+						path: "/auth/forgot_password",
+						params: {
+							name: "forgot_password"
+						}
+					},
+					{
+						...Signup,
+						path: "/auth/signup",
+						params: {
+							name: "signup"
+						}
+					}
+				]
+			}
 		]
 	}
 ];

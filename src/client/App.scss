@@ -8,13 +8,14 @@
   overflow-x: hidden;
 
   .route-page {
-    padding: 20px;
+    padding: 90px 20px 20px 20px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
 
     &.route-page-fullscreen {
       position: fixed;
+      padding-top: 0;
       top:0;
       left: 0;
       right: 0;
@@ -35,7 +36,7 @@
 
     .page-left-sidebar {
       position: fixed;
-      top: 60 + $header-height;
+      top: 55 + $header-height;
       width: 250px;
       left: 0;
       bottom: 0;

@@ -4,41 +4,27 @@ import classnames from "classnames";
 const Checkbox = ({
 	input,
 	label,
-	large,
-	inline,
 	meta: { touched, error }
 }) => {
 	let containerClassName = classnames({
-		"pt-large": large,
+		"input-checkbox": true,
 		"input-valid": touched && !error,
 		"input-invalid": touched && error
 	});
 
 	return (
 		<div className={containerClassName}>
-			{label && !inline ? (
-				<div className="input-group-left">
-					<div className="input-label">{label}</div>
+			<label className="blade-checkbox-container">
+				<input {...input} checked={input.value} className="blade-checkbox" type="checkbox" />
+				<div className="blade-checkbox-control" />
+				{label ? <div className="input-label">{label}</div> : ""}
+			</label>
+
+			{touched && error ? (
+				<div className="input-error">
+					{touched && error && <span>{error}</span>}
 				</div>
-			) : (
-				""
-			)}
-
-			<div className="input-group-right">
-				<label className="pt-checkbox pt-control">
-					<input {...input} type="checkbox" />
-					<span className="pt-control-indicator" />
-					{inline && label ? <div className="input-label">{label}</div> : ""}
-				</label>
-
-				{touched && error ? (
-					<div className="input-error">
-						{touched && error && <span>{error}</span>}
-					</div>
-				) : (
-					""
-				)}
-			</div>
+			) : ""}
 		</div>
 	);
 };

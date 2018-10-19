@@ -1,0 +1,28 @@
+.input-checkbox  {
+  position: relative;
+  overflow: hidden;
+
+  .blade-checkbox-container {
+    display: flex;
+    cursor: pointer;
+
+    .blade-checkbox-control {
+      height: 16px;
+      width: 16px;
+      border-radius: 3px;
+      background: $white;
+      transition: all 0.2s;
+      border: 1px solid $light-gray3;
+      margin: 0 7px 0 0;
+    }
+
+    .blade-checkbox {
+      position: absolute;
+      left: -100px;
+
+      &:checked + .blade-checkbox-control {
+        background: $light-gray3
+      }
+    }
+  }
+}
